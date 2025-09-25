@@ -5,7 +5,7 @@ export const Hero = () => {
   return (
     <Container>
         <HeroVideo>
-            <video src='/BFAHERO.mp4' autoPlay loop muted playsInline />
+            <video src='/BFAHEROTHH.mp4' autoPlay loop muted playsInline />
             <Overlay />
         </HeroVideo>
         <Wrapper>

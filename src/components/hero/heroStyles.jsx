@@ -29,6 +29,8 @@ export const Wrapper = styled.div`
 export const Title = styled.div`
     font-size: 3em;
     font-weight: 700;
+    text-shadow: 5cap;
+    text-shadow: 0 4px 8px rgba(255, 255, 255, 0.506);
 
     
 `
@@ -36,6 +38,7 @@ export const Title = styled.div`
 export const Subtitle = styled.div`
     font-size: 2.5em;
     font-weight: 500;
+    text-shadow: 0 4px 8px rgba(255, 255, 255, 0.506);
     
 `
 

@@ -16,8 +16,10 @@ export const Container = styled.div`
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
-    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px) brightness(1.9);
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
 `
 
 export const Wrapper = styled.div`
@@ -59,6 +61,7 @@ export const MenuItem = styled.div`
     &:hover{
         transform: scale(1.1);
         color: azure;
+        text-shadow: 0 4px 10px rgb(0, 0, 0);
     }
 `
 
