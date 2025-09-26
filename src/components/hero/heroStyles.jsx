@@ -49,6 +49,10 @@ export const HeroVideo = styled.div`
     position: absolute;
     z-index: 1;
     background: rgba(0, 0, 0, 0.745);
+
+    .video{
+        width: 100%;
+    }
         
 `
 
@@ -58,6 +62,6 @@ export const Overlay = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.346); /* oscuridad extra para que el texto se lea */
+  background: rgba(0, 0, 0, 0.60); /* oscuridad extra para que el texto se lea */
   z-index: 2;
 `;

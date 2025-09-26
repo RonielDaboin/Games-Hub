@@ -1,4 +1,5 @@
 import { LowDownBar } from '../Lowbar/LowDownBar';
+import { LowDownBarChannels } from '../Lowbar Channels/LowDownBarChannels';
 import { Container, Wrapper, Left, Logo, Right, MenuItem } from './NavbarStyle';
 
 
@@ -9,10 +10,12 @@ export const HeaderEx = () => {
           <Wrapper>
               <Left>
                   <Logo>
-                    <h3> Wow ExChange</h3>
+                    <h3> Games Hub</h3>
                   </Logo>
               </Left>
-                    <h1>Header Component</h1>
+                    <h1>Games</h1>
+                    <h1>Services</h1>
+                    <h1>Support</h1>
               <Right>
                   <MenuItem>Register</MenuItem>
                   <MenuItem>Sign In</MenuItem>
@@ -20,6 +23,7 @@ export const HeaderEx = () => {
           </Wrapper>
       </Container>
       <LowDownBar/>
+      {/* <LowDownBarChannels /> */}
     </>
   )
 }

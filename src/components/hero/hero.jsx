@@ -5,7 +5,7 @@ export const Hero = () => {
   return (
     <Container>
         <HeroVideo>
-            <video src='/BFAHEROTHH.mp4' autoPlay loop muted playsInline />
+            <video className='video' src='https://res.cloudinary.com/dra09b3f9/video/upload/v1758849906/ghub_xfn3nn.mp4' autoPlay loop muted playsInline />
             <Overlay />
         </HeroVideo>
         <Wrapper>

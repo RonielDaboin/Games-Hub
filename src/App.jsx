@@ -1,6 +1,7 @@
 
 import { HeaderEx } from './components/header/Navbar/NavBar'
 import { Hero } from './components/hero/hero'
+import { FeaturedGames } from './components/InfoSecction/InfoGames/FeaturedGames'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <HeaderEx />
       <Hero />
+      <FeaturedGames />
     </>
   )
 }
