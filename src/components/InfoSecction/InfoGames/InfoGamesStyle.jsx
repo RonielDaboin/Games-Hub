@@ -81,9 +81,10 @@ export const Info = styled.div`
   }
 
   p {
-    font-size: 0.8rem;
+    font-size: 0.79rem;
     color: #b0bec5;
     margin-top: 4px;
+
   }
 `;
 
