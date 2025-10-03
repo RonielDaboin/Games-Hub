@@ -5,7 +5,7 @@ export const Container = styled.div`
     align-items: center;
     justify-content: space-between;
     height: 8%;
-    width: 40%;
+    width: 45%;
     background-color: #c7d5d53f;
     margin: 0 auto;
     border-radius: 1rem;
@@ -13,7 +13,7 @@ export const Container = styled.div`
     margin-top: 118px;
     left: 50%;
     z-index: 2;
-    padding: 0 20px;
+    padding: 0 25px;
     transform: translateX(-50%);
     backdrop-filter: blur(10px) brightness(1.9);
     -webkit-backdrop-filter: blur(10px);
@@ -34,12 +34,11 @@ export const MenuItem = styled.div`
     margin-left: 25px;
     font-size: 18px;
     cursor: pointer;
-    transition:  ease-in-out 0.5s;
+    transition: transform 0.3s;
     
     &:hover{
-        transform: scale(1.1);
+        transform: scale(1.05);
         color: azure;
-        text-shadow: 0 4px 8px rgb(0, 0, 0);
+        text-shadow: 0 4px 10px rgb(0, 0, 0);
     }
-    
 `
