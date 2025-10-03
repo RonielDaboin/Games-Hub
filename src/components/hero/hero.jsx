@@ -9,8 +9,8 @@ export const Hero = () => {
             <Overlay />
         </HeroVideo>
         <Wrapper>
-            <Title> The best place to make your purchases or sales</Title>
-            <Subtitle>Fast and Safe</Subtitle>
+            <Title> El mejor lugar para realizar tus compras o ventas </Title>
+            <Subtitle> Rápido y seguro </Subtitle>
         </Wrapper>
     </Container>
   )
