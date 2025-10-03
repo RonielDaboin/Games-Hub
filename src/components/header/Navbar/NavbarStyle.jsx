@@ -63,13 +63,31 @@ export const Logo = styled.div`
 
     &:hover {
         transform: scale(1.05);
-        border-radius: 2em;
-        background-color: #f1f1f196;;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-        border-right: 0.3px solid white;
-        border-left: 0.3px solid white;
+        /* border-radius: 2em; */
+        /* background-color: #f1f1f196;; */
+        /* box-shadow: 0 4px 12px rgba(0,0,0,0.2); */
+        /* border-right: 0.3px solid white;
+        border-left: 0.3px solid white; */
 
 }
+`
+
+
+
+export const Img = styled.img`
+    width: 120px;
+    height: 80px;
+    margin-top: 0.9em;
+    /* margin-left: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    
+    &:hover{
+        transform: scale(1.05);
+        color: azure;
+        text-shadow: 0 4px 10px rgb(0, 0, 0);
+    } */
 `
 
 export const MenuItem = styled.div`
@@ -86,10 +104,10 @@ export const MenuItem = styled.div`
 `
 
 export const SearchInput = styled.input`
-  max-width: ${(props) => (props.show ? '150px' : '0')};
-  opacity: ${(props) => (props.show ? '1' : '0')};
-  padding: ${(props) => (props.show ? '5px 10px' : '0')};
-  margin-left: ${(props) => (props.show ? '10px' : '0')};
+  max-width: ${(props) => (props.$show ? '150px' : '0')};
+  opacity: ${(props) => (props.$show ? '1' : '0')};
+  padding: ${(props) => (props.$show ? '5px 10px' : '0')};
+  margin-left: ${(props) => (props.$show ? '10px' : '0')};
   border: 1px solid #ffffff;
   border-radius: 4px;
   transition: max-width 0.3s ease, opacity 0.3s ease, padding 0.3s ease, margin-left 0.3s ease;

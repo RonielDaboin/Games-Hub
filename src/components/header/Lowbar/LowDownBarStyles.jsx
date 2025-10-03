@@ -13,7 +13,7 @@ export const Container = styled.div`
     margin-top: 118px;
     left: 50%;
     z-index: 2;
-    padding: 0 25px;
+    padding: 0 0px;
     transform: translateX(-50%);
     backdrop-filter: blur(10px) brightness(1.9);
     -webkit-backdrop-filter: blur(10px);

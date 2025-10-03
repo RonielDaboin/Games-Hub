@@ -13,3 +13,24 @@ body {
   -moz-osx-font-smoothing: grayscale;
   
 }
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffffff86;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: #20b358; 
+  transform: scale(1.05);   
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}

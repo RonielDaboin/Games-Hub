@@ -1,12 +1,19 @@
-import { LowDownBar } from '../Lowbar/LowDownBar';
-import { Container, Wrapper, Left, Logo, Right, MenuItem, Middle, SearchInput } from './NavbarStyle';
-import { useEffect, useRef, useState  } from 'react';
-
-
+import { LowDownBar } from "../Lowbar/LowDownBar";
+import {
+  Container,
+  Wrapper,
+  Left,
+  Logo,
+  Right,
+  MenuItem,
+  Middle,
+  SearchInput,
+  Img,
+} from "./NavbarStyle";
+import { useEffect, useRef, useState } from "react";
 
 export const HeaderEx = () => {
-
-const searchInputRef = useRef(null);
+  const searchInputRef = useRef(null);
   const searchContainerRef = useRef(null);
   const [showSearch, setShowSearch] = useState(false);
 
@@ -24,45 +31,48 @@ const searchInputRef = useRef(null);
         setShowSearch(false);
       }
     };
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
-
-  
-
 
   return (
     <>
       <Container>
-          <Wrapper>
-              <Left>
-                  <Logo>
-                    <h3> Games Hub </h3>
-                  </Logo>
-              </Left>
-              <Middle>
-                    {/* <MenuItem>Home</MenuItem>
+        <Wrapper>
+          <Left>
+            <Logo>
+              {/* <h3> Games Hub </h3> */}
+            <Img
+            src="https://res.cloudinary.com/dra09b3f9/image/upload/v1759532761/pixelcut-export_-_2025-10-03T200556.362_nm20xj.png"
+            alt="Logo Games Hub"
+            
+          />
+            </Logo>
+          </Left>
+          <Middle>
+            
+            <MenuItem>Home</MenuItem>
                     <MenuItem>Comprar</MenuItem>
                     <MenuItem>Vender</MenuItem>
                     <MenuItem>Productos</MenuItem>
                     <MenuItem>Promociones / Ofertas</MenuItem>
                     <MenuItem>Soporte</MenuItem>
-                    <MenuItem>Nosotros</MenuItem> */}
-              </Middle>
-              <Right ref={searchContainerRef}>
-                <MenuItem onClick={handleSearchClick}>Buscar</MenuItem>
-                <SearchInput
-                  ref={searchInputRef}
-                  show={showSearch}
-                  placeholder="Escribe aquí..."
-                />
-                <MenuItem>Mi Cuenta</MenuItem>
-                <MenuItem>Carrito</MenuItem>
-                <MenuItem>Idioma / Moneda</MenuItem>
-              </Right>
-          </Wrapper>
+                    <MenuItem>Nosotros</MenuItem>
+          </Middle>
+          <Right ref={searchContainerRef}>
+            <MenuItem onClick={handleSearchClick}>Buscar</MenuItem>
+            <SearchInput
+              ref={searchInputRef}
+              $show={showSearch}
+              placeholder="Escribe aquí..."
+            />
+            <MenuItem>Mi Cuenta</MenuItem>
+            <MenuItem>Carrito</MenuItem>
+            <MenuItem>Idioma / Moneda</MenuItem>
+          </Right>
+        </Wrapper>
       </Container>
-      <LowDownBar/>
+      {/* <LowDownBar /> */}
     </>
-  ) 
-}
+  );
+};
