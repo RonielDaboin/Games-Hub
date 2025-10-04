@@ -1,13 +1,13 @@
 import { HeaderEx } from "./components/header/Navbar/NavBar";
 import { Hero } from "./components/hero/hero";
-import { FeaturedGames } from "./components/InfoSecction/InfoGames/FeaturedGames";
+import { InfoSecction } from "./components/InfoSecction/InfoSecction";
 
 function App() {
   return (
     <>
       <HeaderEx />
       <Hero />
-      <FeaturedGames />
+      <InfoSecction />
       <a
         href="https://wa.me/12127365000?text=Hola,%20quiero%20más%20info!"
         target="_blank"
