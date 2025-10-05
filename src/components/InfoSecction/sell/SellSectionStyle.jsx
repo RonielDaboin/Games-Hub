@@ -59,20 +59,12 @@ export const Image = styled.img`
     height: auto;
     transition: all 0.3s ease-in-out;
     animation: pulseSell 3s infinite;
-    border-radius: 1em;
+    border-radius: 20px;
+    filter: drop-shadow(0 0 50px rgba(0, 128, 255, 0.9)); 
+    transform: perspective(1000px) rotateY(-10deg); 
 
-@keyframes pulseSell {
-    0% {
-      /* transform: scale(1); */
-      filter: drop-shadow(0 4px 6px rgba(255, 255, 255, 0.996))saturate(150%);
+    &:hover {
+        transform: perspective(1000px) rotateY(10deg) scale(1.05);
+        filter: drop-shadow(0 0 70px rgba(0, 128, 255, 1));
     }
-    50% {
-      /* transform: scale(1.08); crece un poquito */
-      filter: drop-shadow(0 6px 12px rgba(92, 91, 91, 0.575))saturate(130%);
-    }
-    100% {
-      /* transform: scale(1); */
-      filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2))saturate(110%);
-    }
-  }
 `

@@ -7,10 +7,12 @@ export const Container = styled.div`
     justify-content: center;
     text-align: center;
     color: #ffff;
-    background: linear-gradient(190deg, #0d0d0d,#3700ff);
+    /* background: linear-gradient(190deg, #0d0d0d,#3700ff); */
+    background: radial-gradient(circle at center, rgba(0, 128, 255, 0.15), #000 80%);
     width: 100%;
     height: auto;
     padding: 2rem 0rem ;
+    
 `
 export const HeaderMain = styled.h2`
     font-size: 2.5rem;
@@ -68,21 +70,12 @@ export const Image = styled.img`
     width: 100%;
     height: auto;
     transition: all 0.3s ease-in-out;
-    animation: pulseSell 3s infinite;
-    border-radius: 1em;
+    border-radius: 20px;
+    filter: drop-shadow(0 0 50px rgba(0, 128, 255, 0.9)); 
+    transform: perspective(1000px) rotateY(-10deg); 
 
-@keyframes pulseSell {
-    0% {
-      /* transform: scale(1); */
-      filter: drop-shadow(0 4px 6px rgba(255, 255, 255, 0.996))saturate(150%);
+    &:hover {
+        transform: perspective(1000px) rotateY(10deg) scale(1.05);
+        filter: drop-shadow(0 0 70px rgba(0, 128, 255, 1));
     }
-    50% {
-      /* transform: scale(1.08); crece un poquito */
-      filter: drop-shadow(0 6px 12px rgba(92, 91, 91, 0.575))saturate(130%);
-    }
-    100% {
-      /* transform: scale(1); */
-      filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2))saturate(110%);
-    }
-  }
-`
+`;
