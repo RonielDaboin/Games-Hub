@@ -60,11 +60,11 @@ export const Image = styled.img`
     transition: all 0.3s ease-in-out;
     animation: pulseSell 3s infinite;
     border-radius: 20px;
-    filter: drop-shadow(0 0 50px rgba(0, 128, 255, 0.9)); 
+    filter: drop-shadow(0 0 50px rgba(45, 238, 151, 0.9)); 
     transform: perspective(1000px) rotateY(-10deg); 
 
     &:hover {
         transform: perspective(1000px) rotateY(10deg) scale(1.05);
-        filter: drop-shadow(0 0 70px rgba(0, 128, 255, 1));
+        filter: drop-shadow(0 0 70px #59f5a4);
     }
 `
