@@ -51,8 +51,7 @@ export const AboutUsSection = () => {
             Porque en Games Hub, más que un marketplace, somos un punto de
             encuentro para gamers que comparten la misma pasión. 🎮✨
           </Subtitle>
-        </Left>
-        
+        </Left>  
       </Container>
     </>
   );

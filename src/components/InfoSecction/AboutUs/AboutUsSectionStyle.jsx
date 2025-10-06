@@ -8,13 +8,15 @@ export const Container = styled.div`
   text-align: center;
   color: #ffff;
   /* background: linear-gradient(350deg, #4F9CFF , #C0C0C0    ); */
-  /* background-image: url("https://res.cloudinary.com/dra09b3f9/image/upload/v1759637983/ChatGPT_Image_5_oct_2025_01_15_29_vf8c28.png");
+  background-image: url("https://res.cloudinary.com/dra09b3f9/image/upload/v1759710489/pixelcut-export_-_2025-10-05T212803.230_kprpcu.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
   height: auto;
-  padding: 2rem 0rem; */
+  padding: 3rem 0rem;
+  border-top: 10px solid;
+  border-image: linear-gradient(90deg, #ff8a00, #e52e71) 1;
 `;
 export const HeaderMain = styled.h2`
   font-size: 2.5rem;
@@ -47,6 +49,16 @@ export const Content = styled.div`
 export const Left = styled.div`
   width: auto;
   height: auto;
+  padding: 6.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px) brightness(0.8);
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  border-radius: 2em;
 `;
 export const Right = styled.div`
   width: auto;
@@ -56,11 +68,11 @@ export const Right = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  /* -webkit-backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px) brightness(0.8);
   border-top: 2px solid white;
   border-bottom: 2px solid white;
-  border-radius: 2em; */
+  border-radius: 2em;
 `;
 
 export const ImageBuy = styled.img`

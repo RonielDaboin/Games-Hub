@@ -11,6 +11,8 @@ export const Container = styled.div`
     width: 100%;
     height: auto;
     padding: 2rem 0rem ;
+    border-top: 10px solid;
+    border-image: linear-gradient(90deg, #ff8a00, #e52e71) 1;
 `
 export const HeaderMain = styled.h2`
     font-size: 2.5rem;
