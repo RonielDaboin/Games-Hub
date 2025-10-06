@@ -150,7 +150,7 @@ export const DiscordButton = styled.a`
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, box-shadow 0.2s ease-in-out;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
   &:hover {
     transform: translateY(-2px);

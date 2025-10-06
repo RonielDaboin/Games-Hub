@@ -3,7 +3,7 @@ import { InfoCountry } from "./infoCountry/infoCountry";
 import { BuySection } from "./buy/buySection";
 import { SellSection } from "./sell/SellSection";
 import { SupportSection } from "./support/SupportSection";
-// import { AboutUsSection } from "./aboutUs/AboutUsSection";
+import { AboutUsSection } from "./AboutUs/AboutUsSection";
 
 
 export const InfoSecction = () => {
@@ -14,7 +14,7 @@ export const InfoSecction = () => {
         <SellSection />
         <InfoCountry />
         <SupportSection />
-        {/* <AboutUsSection /> */}
+        <AboutUsSection />
     </>
   )
 }

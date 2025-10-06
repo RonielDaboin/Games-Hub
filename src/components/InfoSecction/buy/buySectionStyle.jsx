@@ -52,6 +52,12 @@ export const Right = styled.div`
     flex-direction: column;
     align-items: center;
     text-align: center;
+    /* background-image: url('https://res.cloudinary.com/dra09b3f9/image/upload/v1759707808/Gemini_Generated_Image_1glqrb1glqrb1glq_u6vdvz.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px) brightness(5); */
 `
 
 export const ImageBuy = styled.img`

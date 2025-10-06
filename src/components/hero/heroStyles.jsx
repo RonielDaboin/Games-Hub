@@ -6,7 +6,7 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     background-color: #c02217c7;
-    height: 700px;
+    height: 87vh;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -16,7 +16,7 @@ export const Container = styled.div`
 
 export const Wrapper = styled.div`
     position: relative;
-    z-index: 2;
+    z-index: 3;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,14 +44,21 @@ export const Subtitle = styled.div`
 
 export const HeroVideo = styled.div`
     width: 100%;
-    height: 150%;
-    object-fit: cover;
+    height: 100%; /* mejor que forzar 108vh */
     position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
     z-index: 1;
-    background: rgba(0, 0, 0, 0.745);
 
     .video{
-        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
     }
         
 `
@@ -62,6 +69,6 @@ export const Overlay = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.60); /* oscuridad extra para que el texto se lea */
+  background: rgba(0, 0, 0, 0.60);
   z-index: 2;
 `;

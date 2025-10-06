@@ -12,6 +12,7 @@ import {
   DiscordButton,
   RRSS,
 } from "./SupportSectionStyle";
+import { CreditCard, Coins, ShieldCheck, Headphones } from "lucide-react";
 
 export const SupportSection = () => {
   return (
@@ -25,8 +26,7 @@ export const SupportSection = () => {
           <HeaderMain>Soporte y Atención al Cliente</HeaderMain>
           <Title>Siempre disponibles para ayudarte</Title>
           <Subtitle>
-            {" "}
-            En Games Hub, tu tranquilidad es lo más importante.{" "}
+            En Games Hub, tu tranquilidad es lo más importante.
           </Subtitle>
           <Content>
             Nuestro equipo de soporte está disponible para resolver tus dudas,
@@ -35,20 +35,16 @@ export const SupportSection = () => {
           </Content>
           <Title>¿Necesitas ayuda?</Title>
           <Content>
-            {" "}
-            <strong> – Estados de pago o transferencias.</strong>
+            <strong> 💳 Estados de pago o transferencias.</strong>
           </Content>
           <Content>
-            {" "}
-            <strong> – Detalles de compra de oro o saldo Blizzard.</strong>
+            <strong> 🪙 Detalles de compra de oro o saldo Blizzard.</strong>
           </Content>
           <Content>
-            {" "}
-            <strong>– Verificación de cuentas y métodos de pago.</strong>
+            <strong>✅ Verificación de cuentas y métodos de pago.</strong>
           </Content>
           <Content>
-            {" "}
-            <strong>– Soporte técnico y asistencia personalizada.</strong>
+            <strong>🤝 Soporte técnico y asistencia personalizada.</strong>
           </Content>
           <Subtitle> Estamos aquí para ayudarte en todo momento. </Subtitle>
           <Subtitle>
