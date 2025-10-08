@@ -1,16 +1,17 @@
 
 import { Section, Filters, Grid, Title, Card, Badge, Info, Price } from './InfoGamesStyle'
+import { Element } from 'react-scroll';
 
 
 export const FeaturedGames = () => {
   return (
     <Section>
-      <Title>JUEGOS DESTACADOS</Title>
-      
+      <Element name='products'/>
+      <Title>JUEGOS DISPONIBLES</Title>
        <Filters>
-        <button>MÁS VENDIDOS</button>
+        {/* <button>MÁS VENDIDOS</button>
         <button>NUEVOS</button>
-        <button>OFERTA</button>
+        <button>OFERTA</button> */}
       </Filters> 
 
       <Grid>
@@ -64,7 +65,7 @@ export const FeaturedGames = () => {
           </Info>
         </Card>
 
-        <Card>
+        {/* <Card>
           <Badge type="nuevo">NUEVO</Badge>
           <img src="https://res.cloudinary.com/dra09b3f9/image/upload/v1758852121/Screenshot_19_auhrkw.png" alt="WracraftIII" />
           <Info>
@@ -131,7 +132,7 @@ export const FeaturedGames = () => {
             <p>ESTRATEGIA EN TIEMPO REAL</p>
           <Price type="nuevo">Comprar 30.99$ </Price>
           </Info>
-        </Card>
+        </Card> */}
       </Grid>
     </Section>
   );

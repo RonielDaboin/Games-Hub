@@ -70,3 +70,23 @@ export const Image = styled.img`
         filter: drop-shadow(0 0 70px #59f5a4);
     }
 `
+export const Button = styled.button`
+  border: none;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 2rem;
+  margin-right: 1em;
+  background-color: #ffffff60;
+  backdrop-filter: blur(5px) Brightness(200%);
+  -webkit-backdrop-filter: blur(5px);
+  &:hover {
+    background: linear-gradient(90deg, #858484, #38d750, #454443 );
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(255, 138, 0, 0.6);
+  }
+`;

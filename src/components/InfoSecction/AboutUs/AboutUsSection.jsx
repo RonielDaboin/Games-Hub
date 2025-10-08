@@ -6,18 +6,17 @@ import {
   Title,
   Subtitle,
   Content,
-  RRSS,
-  InstagramButton,
-  WhatsappButton,
-  DiscordButton,
+  Wrapper,
 } from "./AboutUsSectionStyle";
 
-import React from "react";
+import { Element } from "react-scroll";
 
 export const AboutUsSection = () => {
   return (
     <>
+    <Element name="aboutus"/>
       <Container>
+        <Wrapper>
         <Right>
           <HeaderMain>Sobre Games Hub</HeaderMain>
           <Title>🛡️Un espacio seguro y confiable para jugadores como tú</Title>
@@ -52,6 +51,7 @@ export const AboutUsSection = () => {
             encuentro para gamers que comparten la misma pasión. 🎮✨
           </Subtitle>
         </Left>  
+        </Wrapper>
       </Container>
     </>
   );

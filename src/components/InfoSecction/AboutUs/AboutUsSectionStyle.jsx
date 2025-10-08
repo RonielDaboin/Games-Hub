@@ -54,11 +54,6 @@ export const Left = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px) brightness(0.8);
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
-  border-radius: 2em;
 `;
 export const Right = styled.div`
   width: auto;
@@ -68,11 +63,7 @@ export const Right = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px) brightness(0.8);
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
-  border-radius: 2em;
+  
 `;
 
 export const ImageBuy = styled.img`
@@ -97,87 +88,16 @@ export const ImageBuy = styled.img`
   }
 `;
 
-export const InstagramButton = styled.a`
-  background: linear-gradient(
-    45deg,
-    #feda75 0%,
-    #fa7e1e 25%,
-    #d62976 50%,
-    #9c49a6 75%,
-    #515bd4 100%
-  );
-  text-decoration: none;
-  color: white;
-  font-size: 1.1em;
-  font-weight: bold;
-  padding: 12px 25px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
 
-  &:hover {
-    transform: translateY(-2px);
-
-    box-shadow: 0 5px 15px rgba(250, 126, 30, 0.6);
-  }
-
-  &:active {
-    transform: translateY(0);
-    box-shadow: none;
-  }
-`;
-
-export const WhatsappButton = styled.a`
-  background-color: #25d366;
-  text-decoration: none;
-  color: white;
-  font-size: 1.1em;
-  font-weight: bold;
-  padding: 12px 25px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
-
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.6);
-  }
-  &:active {
-    transform: translateY(0);
-    box-shadow: none;
-  }
-`;
-
-export const DiscordButton = styled.a`
-  background-color: #5865f2;
-  text-decoration: none;
-  color: white;
-  font-size: 1.1em;
-  font-weight: bold;
-  padding: 12px 25px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out, box-shadow 0.2s ease-in-out;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(88, 101, 242, 0.6);
-  }
-  &:active {
-    transform: translateY(0);
-    box-shadow: none;
-  }
-`;
-
-export const RRSS = styled.div`
+export const Wrapper = styled.div`
   display: flex;
-    gap: 1rem;
-    margin-top: 1rem;
-    justify-content: center;
-    align-items: center;
-`;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px) brightness(0.8);
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  border-radius: 2em;
+`

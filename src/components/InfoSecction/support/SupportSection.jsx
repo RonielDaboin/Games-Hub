@@ -12,11 +12,11 @@ import {
   DiscordButton,
   RRSS,
 } from "./SupportSectionStyle";
-import { CreditCard, Coins, ShieldCheck, Headphones } from "lucide-react";
-
+import { Element } from "react-scroll";
 export const SupportSection = () => {
   return (
     <>
+        <Element name="support"/>
       <Container>
         <Left>
           {/* <ImageBuy src="https://res.cloudinary.com/dra09b3f9/image/upload/v1759637983/ChatGPT_Image_5_oct_2025_01_15_29_vf8c28.png" alt="buy section" /> */}

@@ -7,11 +7,14 @@ import {
   Right,
   Image,
   Content,
+  Button,
 } from "./SellSectionStyle";
+import { Element } from "react-scroll";
 
 export const SellSection = () => {
   return (
     <>
+    <Element name="sell"/>
       <Container>
         <Left>
           <HeaderMain>
@@ -36,6 +39,9 @@ export const SellSection = () => {
             alt="sell section"
           />
         </Right>
+        <Button>
+          Video Explicativo
+          </Button>
       </Container>
     </>
   );

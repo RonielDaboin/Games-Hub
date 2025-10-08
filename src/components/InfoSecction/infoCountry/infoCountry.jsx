@@ -9,10 +9,12 @@ import {
   Image,
   ImgCountry,
 } from "./infoCountryStyle";
+import { Element } from "react-scroll";
 
 export const InfoCountry = () => {
   return (
     <>
+    <Element name="countries" />
       <Container>
         <Left>
           <HeaderMain>Países Disponibles</HeaderMain>

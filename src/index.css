@@ -5,7 +5,8 @@ body {
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background: linear-gradient(180deg, #040404bd 50%, #000000bd 50%);
+
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

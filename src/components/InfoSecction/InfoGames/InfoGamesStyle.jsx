@@ -1,15 +1,25 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-  background: linear-gradient(180deg, #0a1a2f, #12263f);
+  color: #fff;
+  background: linear-gradient(150deg, #8c8d8f, #020202);
   padding: 3rem 5%;
   color: #fff;
+  border-top: 10px solid;
+  border-image: linear-gradient(90deg, #f0e804, #5501ff) 1;
 `;
 
 export const Title = styled.h2`
   font-size: 2rem;
   font-weight: 800;
   margin-bottom: 2rem;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px) brightness(0.8);
+  border-top: 1px solid #ffffff9b;
+  border-bottom: 1px solid #ffffff9b;
+  border-radius: 2em;
+  width: fit-content;
+  padding: 0.5rem 1.5rem;
 `;
 
 export const Filters = styled.div`
@@ -93,13 +103,15 @@ export const Price = styled.span`
     top: 0px;
     left: 40%;
     background: ${(props) =>
-        props.type === "price" ? "#00c853" : "#2962ff"};
+      props.type === "nuevo" ? "#00c853" : "#2962ff"};
     color: #fff;
     font-size: 0.80rem;
     font-weight: bold;
     padding: 4px 10px;
     border-radius: 6px;
     transition: ease-in-out 0.5s ;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px) brightness(0.8);
 
     &:hover{
         background-color: "#2962ff" ;

@@ -1,11 +1,13 @@
 
-import {  Container, HeaderMain, Subtitle, Title, Left, Right, ImageBuy, Content } from "./buySectionStyle"
+import {  Container, HeaderMain, Subtitle, Title, Left, Right, ImageBuy, Content, Button } from "./buySectionStyle"
+import { Element } from "react-scroll";
 
 
 
 export const BuySection = () => {
   return (
     <>
+    <Element name="buy" />
       <Container>
         <Left>
           <ImageBuy src="https://res.cloudinary.com/dra09b3f9/image/upload/v1759619805/pixelcut-export_-_2025-10-04T201639.332_gvainu.png" alt="buy section" />
@@ -18,6 +20,7 @@ export const BuySection = () => {
         <Content> <strong>Oro dentro del juego</strong> – Aumenta tus recursos y alcanza tus objetivos más rápido con oro 100% confiable. </Content>
         <Subtitle> En Games Hub ponemos a tu disposición una selección completa de productos digitales para World of Warcraft </Subtitle>
         </Right>
+        <Button>Video Explicativo</Button>
       </Container> 
     </>
   )
