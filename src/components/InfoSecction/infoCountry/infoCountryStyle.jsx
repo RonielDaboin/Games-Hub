@@ -13,7 +13,7 @@ export const Container = styled.div`
   padding: 2rem 0rem;
 
   @media (max-width: 1024px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     padding: 2rem 1rem;
   }
 
@@ -177,6 +177,7 @@ export const Image = styled.img`
 
   @media (max-width: 1024px) {
     width: 90%;
+    margin-bottom: 1.5rem;
   }
 
   @media (max-width: 480px) {
