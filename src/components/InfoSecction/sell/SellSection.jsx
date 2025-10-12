@@ -18,7 +18,6 @@ export const SellSection = () => {
     <Element name="sell"/>
       <Container>
         <Left>
-        <TitleSection>VENDER CON GAMES HUB</TitleSection>
           <HeaderMain>
             Convierte tu oro y saldo de Blizzard en dinero real
           </HeaderMain>
@@ -36,8 +35,9 @@ export const SellSection = () => {
           </Subtitle>
         </Left>
         <Right>
+        <TitleSection>VENDER CON GAMES HUB</TitleSection>
           <Image
-            src="https://res.cloudinary.com/dra09b3f9/image/upload/v1759626535/pixelcut-export_-_2025-10-04T220843.178_wfovsa.png"
+            src="https://res.cloudinary.com/dra09b3f9/image/upload/v1760295940/image-Photoroom_hebdb7.png"
             alt="sell section"
           />
         </Right>

@@ -112,11 +112,16 @@ export const Content = styled.div`
 export const Left = styled.div`
   width: auto;
   height: auto;
-  padding: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  backdrop-filter: blur(10px) brightness(0.8);
+  -webkit-backdrop-filter: blur(10px) brightness(0.8);
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  border-radius: 2em;
+  padding: 2.5rem 3rem;
 
   @media (max-width: 1024px) {
     padding: 3rem 1.5rem;
@@ -130,6 +135,12 @@ export const Left = styled.div`
 export const Right = styled.div`
   width: auto;
   height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  
 
   @media (max-width: 1024px) {
     margin-top: 2rem;

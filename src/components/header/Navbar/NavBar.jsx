@@ -62,11 +62,11 @@ export const HeaderEx = () => {
           </Right>
 
 
+        </Wrapper>
+      </Container>
           <Hamburger onClick={toggleMenu}>
             {menuOpen ? <MenuIconClose /> : <MenuIconOpen />}
           </Hamburger>
-        </Wrapper>
-      </Container>
 
 
       <MobileMenu $open={menuOpen}>

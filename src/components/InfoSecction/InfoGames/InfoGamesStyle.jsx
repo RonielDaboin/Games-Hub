@@ -76,7 +76,7 @@ export const Filters = styled.div`
 
 export const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(5, minmax(220px, 1fr));
   gap: 1.5rem;
 
   @media (max-width: 1024px) {
@@ -108,7 +108,7 @@ export const Card = styled.div`
 
   img {
     width: 100%;
-    height: 300px;
+    height: 410px;
     object-fit: cover;
     display: block;
 
@@ -152,8 +152,8 @@ export const Info = styled.div`
   }
 
   p {
-    font-size: 0.79rem;
-    color: #b0bec5;
+    font-size: 0.80rem;
+    color: #e0f5ff;
     margin-top: 4px;
 
     @media (max-width: 480px) {

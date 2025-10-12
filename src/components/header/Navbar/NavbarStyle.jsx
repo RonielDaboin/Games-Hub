@@ -22,7 +22,7 @@ export const Container = styled.div`
   border-bottom: 2px solid white;
 
   @media (max-width: 950px) {
-    height: 90px;
+    height: 100px;
     width: 80%;
     border-radius: 2;
     padding: 0 10px;
@@ -63,22 +63,22 @@ export const Right = styled.div`
 `;
 
 export const Logo = styled.div`
-  font-weight: bold;
-  font-size: 20px;
+   width: 160px;
+  height: auto;
+  margin-bottom: 10px;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  padding: 0 20px;
-  line-height: 50px;
+  transition: all 0.3s ease;
 
   &:hover {
     transform: scale(1.05);
+    filter: drop-shadow(0 0 10px #d8a441);
   }
 `;
 
 export const Img = styled.img`
   width: 120px;
-  height: 80px;
-  margin-top: 0.9em;
+  height: 95px;
+  margin-top: 1em;
 `;
 
 export const MenuItem = styled.div`
@@ -96,22 +96,26 @@ export const MenuItem = styled.div`
 
 
 export const Hamburger = styled.div`
-  display: none;
-  font-size: 2rem;
+  position: fixed;
+  top: 28px;
+  right: 80px;
+  font-size: 2.5rem;
   color: white;
   cursor: pointer;
-  z-index: 20;
+  z-index: 3000;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
 
-  @media (max-width: 950px) {
-    display: block;
+  @media (min-width: 951px) {
+    display: none;
   }
 `;
+
 
 export const MobileMenu = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.9);
   position: fixed;
   top: 0;
   left: ${({ $open }) => ($open ? '0' : '-100%')};
@@ -119,14 +123,43 @@ export const MobileMenu = styled.div`
   height: 100vh;
   transition: all 0.3s ease-in-out;
   padding-top: 120px;
-  z-index: 15;
+  z-index: 2000;
 
   ${MenuItem} {
     color: #fff;
-    font-size: 1.8rem;
+    font-size: 2rem; /* 🔥 Aumenta el tamaño */
     margin: 20px 0;
+    font-weight: 600; /* Más legible */
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+    transition: transform 0.2s, color 0.2s;
+    animation: fadeIn 3s ease both;
+    
+    &:hover {
+      transform: scale(1.1);
+      color: #d8a441; /* Resalta como tu logo */
+    }
   }
+
+  @media (max-height: 600px) {
+    ${MenuItem} {
+      font-size: 1.6rem; /* Evita overflow en pantallas chicas */
+    }
+  }
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 `;
+
+
 
 export const MenuIconOpen = FiMenu;
 export const MenuIconClose = FiX;

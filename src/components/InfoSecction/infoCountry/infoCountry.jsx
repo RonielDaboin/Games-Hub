@@ -18,7 +18,6 @@ export const InfoCountry = () => {
     <Element name="countries" />
       <Container>
         <Left>
-        <TitleSection>GAMES HUB LATAM</TitleSection>
           <HeaderMain>Países Disponibles para Compra - Venta </HeaderMain>
           <Title>Transacciones rápidas, seguras y sin fronteras</Title>
           <Content>
@@ -59,10 +58,11 @@ export const InfoCountry = () => {
           </Subtitle>
         </Left>
         <Right>
+          <TitleSection>GAMES HUB LATAM</TitleSection>
           <Image
             src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmtiOGVhanExOWhqeTF1Z2xuNXRiMDhlcmxiM25qdG5iZDNuN3kwMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/U4FkC2VqpeNRHjTDQ5/giphy.gif"
             alt="sell section"
-          />
+            />
         </Right>
       </Container>
     </>

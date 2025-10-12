@@ -7,7 +7,11 @@ export const Container = styled.div`
   justify-content: center;
   text-align: center;
   color: #fff;
-  background: linear-gradient(150deg, #8c8d8f, #020202);
+  /* background: linear-gradient(150deg, #8c8d8f, #020202); */
+  background-image: url('https://res.cloudinary.com/dra09b3f9/image/upload/v1760298068/ee343fe0-0c99-4d74-abc4-2aa826ee2ecf.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
   height: auto;
   padding: 4rem 0rem;
@@ -119,8 +123,14 @@ export const Left = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 5rem;
-  margin-left: 3rem;
+  margin-left: 8rem;
+  backdrop-filter: blur(10px) brightness(0.8);
+  -webkit-backdrop-filter: blur(10px) brightness(0.8);
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  border-radius: 2em;
+  padding: 2.5rem 3rem;
+
 
   @media (max-width: 1024px) {
     padding: 3rem 2rem;
@@ -154,25 +164,37 @@ export const Right = styled.div`
 `;
 
 export const Image = styled.img`
-  width: 43%;
+  width: 57%;
   height: auto;
   transition: all 0.3s ease-in-out;
   animation: pulseSell 3s infinite;
-  border-radius: 20px;
-  filter: drop-shadow(0 0 50px rgba(239, 239, 239, 0.9));
-  transform: perspective(1000px) rotateY(-10deg);
+  margin-left: 2rem;
 
-  &:hover {
-    transform: perspective(1000px) rotateY(10deg) scale(1.05);
-    filter: drop-shadow(0 0 70px #ffffff);
+  @keyframes pulseSell {
+    0% {
+      transform: scale(1);
+      filter: drop-shadow(0 4px 6px rgba(243, 235, 21, 0.996))
+        saturate(150%);
+    }
+    50% {
+      transform: scale(1.08);
+      filter: drop-shadow(0 6px 12px rgba(121, 255, 143, 0.575))
+        saturate(130%);
+    }
+    100% {
+      transform: scale(1);
+      filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2))
+        saturate(110%);
+    }
   }
 
   @media (max-width: 1200px) {
-    width: 50%;
+    width: 55%;
   }
 
   @media (max-width: 900px) {
     width: 70%;
+    margin-left: 0;
   }
 
   @media (max-width: 600px) {
