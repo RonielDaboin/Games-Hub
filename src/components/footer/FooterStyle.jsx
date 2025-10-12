@@ -1,14 +1,29 @@
 import styled from "styled-components";
 
+export const FooterBackground = styled.div`
+  width: 100%;
+  background: linear-gradient(150deg, #8c8d8f, #020202);
+  border-top: 10px solid;
+  border-image: linear-gradient(90deg, #b1afaf, #211e27) 1;
+`;
+
 export const Container = styled.div`
-  max-width: 1500px;
-  height: auto;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 40px 50px;
+
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   color: white;
+  flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
 `;
 
 export const Copyright = styled.footer`
@@ -68,10 +83,15 @@ export const Img = styled.img`
   width: 200px;
   height: 150px;
   margin-top: 0.9em;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 `;
 
 export const WhatsApp = styled.a`
-  
   font-size: 18px;
   cursor: pointer;
   margin-left: 10px;

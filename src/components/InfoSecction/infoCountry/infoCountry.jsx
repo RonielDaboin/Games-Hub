@@ -8,6 +8,7 @@ import {
   Subtitle,
   Image,
   ImgCountry,
+  TitleSection,
 } from "./infoCountryStyle";
 import { Element } from "react-scroll";
 
@@ -17,7 +18,8 @@ export const InfoCountry = () => {
     <Element name="countries" />
       <Container>
         <Left>
-          <HeaderMain>Países Disponibles</HeaderMain>
+        <TitleSection>GAMES HUB LATAM</TitleSection>
+          <HeaderMain>Países Disponibles para Compra - Venta </HeaderMain>
           <Title>Transacciones rápidas, seguras y sin fronteras</Title>
           <Content>
             En Games Hub, realizamos compras de oro y saldo Blizzard con pagos
@@ -30,25 +32,25 @@ export const InfoCountry = () => {
             transferencias locales o plataformas digitales.
           </Content>
           <Content>
-            <ImgCountry src="https://res.cloudinary.com/dra09b3f9/image/upload/v1759628539/5372705_hso0k7.png" alt='colombia' /><strong>Colombia </strong>– Giros y transferencias bancarias en
+            <ImgCountry src="https://res.cloudinary.com/dra09b3f9/image/upload/v1759628539/5372705_hso0k7.png" alt='colombia' /><strong>Colombia </strong>– Mediante transferencias bancarias en
             pesos colombianos.
           </Content>
           <Content>
-            <ImgCountry src="https://res.cloudinary.com/dra09b3f9/image/upload/v1759628718/197586_zadcq0.png" alt='chile' /><strong>Chile </strong>– Pagos rápidos en moneda local.
+            <ImgCountry src="https://res.cloudinary.com/dra09b3f9/image/upload/v1759628718/197586_zadcq0.png" alt='chile' /><strong>Chile </strong>– Pagos rápidos con transferencia en moneda local.
           </Content>
           <Content>
-            <ImgCountry src="https://res.cloudinary.com/dra09b3f9/image/upload/v1759628538/323310_xwkjrf.png" alt='eeuu' /><strong>Estados Unidos </strong> – Pagos vía Zelle y otros métodos
+            <ImgCountry src="https://res.cloudinary.com/dra09b3f9/image/upload/v1759628538/323310_xwkjrf.png" alt='eeuu' /><strong>Estados Unidos </strong> – Pagos vía Paypal y otros métodos
             disponibles.
           </Content>
           <Content>
-            <ImgCountry alt='peru' src='https://res.cloudinary.com/dra09b3f9/image/upload/v1759628292/197563_ihdqyc.png' /><strong>Perú</strong> – Transferencias bancarias y Yape.
+            <ImgCountry alt='peru' src='https://res.cloudinary.com/dra09b3f9/image/upload/v1759628292/197563_ihdqyc.png' /><strong>Perú</strong> – Transferencias bancarias en soles.
           </Content>
           <Content>
-            <ImgCountry src="https://res.cloudinary.com/dra09b3f9/image/upload/v1759628539/197588_qxkbym.png" alt='ecuador' /><strong>Ecuador </strong>– Depósitos y transferencias locales
-            seguras.
+            <ImgCountry src="https://res.cloudinary.com/dra09b3f9/image/upload/v1759628539/197588_qxkbym.png" alt='ecuador' /><strong>Ecuador </strong>– Mediante transferencias en 
+            moneda local.
           </Content>
           <Content>
-            <ImgCountry src="https://res.cloudinary.com/dra09b3f9/image/upload/v1759628539/197504_mhcn3h.png" alt='bolivia' /><strong>Bolivia </strong>– Pagos rápidos en moneda local.
+            <ImgCountry src="https://res.cloudinary.com/dra09b3f9/image/upload/v1759628539/197504_mhcn3h.png" alt='bolivia' /><strong>Bolivia </strong>– Pagos rápidos con transferencia en moneda local.
           </Content>
           <Subtitle>
             Nos aseguramos de que cada transacción sea segura, verificada y al

@@ -11,6 +11,7 @@ import {
   WhatsappButton,
   DiscordButton,
   RRSS,
+  TitleSection
 } from "./SupportSectionStyle";
 import { Element } from "react-scroll";
 export const SupportSection = () => {
@@ -23,6 +24,7 @@ export const SupportSection = () => {
           {/* <ImageBuy src="" alt="buy section" /> */}
         </Left>
         <Right>
+        <TitleSection>SOPORTE GAMES HUB 24/7</TitleSection>
           <HeaderMain>Soporte y Atención al Cliente</HeaderMain>
           <Title>Siempre disponibles para ayudarte</Title>
           <Subtitle>
@@ -55,8 +57,7 @@ export const SupportSection = () => {
           </Subtitle>
         <RRSS>
           <InstagramButton
-            href="https://www.instagram.com/gameshub.oficial/"
-            target="_blank"
+            target="_blank" href="https://www.instagram.com/gameshublatam/"
             rel="noopener noreferrer"
           >
             Instagram
@@ -69,8 +70,7 @@ export const SupportSection = () => {
             WhatsApp
           </WhatsappButton>
           <DiscordButton
-            href="https://discord.gg/4ZtHhYvG"
-            target="_blank"
+            target="_blank" href="https://discord.gg/G4Btf7nm"
             rel="noopener noreferrer"
           >
             Discord

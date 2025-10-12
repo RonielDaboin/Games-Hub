@@ -8,6 +8,7 @@ import {
   Image,
   Content,
   Button,
+  TitleSection
 } from "./SellSectionStyle";
 import { Element } from "react-scroll";
 
@@ -17,6 +18,7 @@ export const SellSection = () => {
     <Element name="sell"/>
       <Container>
         <Left>
+        <TitleSection>VENDER CON GAMES HUB</TitleSection>
           <HeaderMain>
             Convierte tu oro y saldo de Blizzard en dinero real
           </HeaderMain>
@@ -39,9 +41,9 @@ export const SellSection = () => {
             alt="sell section"
           />
         </Right>
-        <Button>
+        {/* <Button>
           Video Explicativo
-          </Button>
+          </Button> */}
       </Container>
     </>
   );

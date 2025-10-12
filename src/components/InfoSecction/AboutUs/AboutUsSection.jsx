@@ -14,7 +14,7 @@ import { Element } from "react-scroll";
 export const AboutUsSection = () => {
   return (
     <>
-    <Element name="aboutus"/>
+    <Element name="aboutUs"/>
       <Container>
         <Wrapper>
         <Right>

@@ -1,121 +1,132 @@
 import styled from 'styled-components';
+import { FiMenu, FiX } from 'react-icons/fi';
 
 export const Container = styled.div`
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 100px;
-    width: 90%;
-    background-color: #b1bebe45;
-    margin: 0 auto;
-    margin-top: 4px;
-    border-radius: 2em;
-    position: fixed;
-    margin-top: 8px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px) brightness(1.9);
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
-`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 90%;
+  background-color: #b1bebe45;
+  margin: 0 auto;
+  border-radius: 2em;
+  position: fixed;
+  margin-top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px) brightness(1.9);
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+
+  @media (max-width: 950px) {
+    height: 90px;
+    width: 80%;
+    border-radius: 2;
+    padding: 0 10px;
+  }
+`;
 
 export const Wrapper = styled.div`
-    width: 100%;
-    padding: 10px 50px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-`
-    
-export const Left = styled.h3`
+  width: 100%;
+  padding: 10px 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+`;
 
-`
+export const Left = styled.div``;
+
 export const Middle = styled.div`
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 950px) {
+    display: none;
+  }
+`;
 
 export const Right = styled.div`
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    
-`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 950px) {
+    display: none;
+  }
+`;
 
 export const Logo = styled.div`
-    font-weight: bold;
-    font-size: 20px;
-    cursor: pointer;
-    transition: ease-in-out 0.3s;
-    padding: 0 20px;
-    line-height: 50px;
-    border-radius: 2em;
-    transition: all 0.2s ease-in-out;
-    border-left: 0.3px solid transparent; 
-    border-right: 0.3px solid transparent; 
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  padding: 0 20px;
+  line-height: 50px;
 
-    &:hover {
-        transform: scale(1.05);
-        /* border-radius: 2em; */
-        /* background-color: #f1f1f196;; */
-        /* box-shadow: 0 4px 12px rgba(0,0,0,0.2); */
-        /* border-right: 0.3px solid white;
-        border-left: 0.3px solid white; */
-
-}
-`
-
-
+  &:hover {
+    transform: scale(1.05);
+  }
+`;
 
 export const Img = styled.img`
-    width: 120px;
-    height: 80px;
-    margin-top: 0.9em;
-    /* margin-left: 25px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: transform 0.3s;
-    
-    &:hover{
-        transform: scale(1.05);
-        color: azure;
-        text-shadow: 0 4px 10px rgb(0, 0, 0);
-    } */
-`
+  width: 120px;
+  height: 80px;
+  margin-top: 0.9em;
+`;
 
 export const MenuItem = styled.div`
-    margin-left: 25px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: transform 0.3s;
-    
-    &:hover{
-        transform: scale(1.05);
-        color: azure;
-        text-shadow: 0 4px 10px rgb(0, 0, 0);
-    }
-`
+  margin-left: 25px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.3s;
 
-export const SearchInput = styled.input`
-  max-width: ${(props) => (props.$show ? '150px' : '0')};
-  opacity: ${(props) => (props.$show ? '1' : '0')};
-  padding: ${(props) => (props.$show ? '5px 10px' : '0')};
-  margin-left: ${(props) => (props.$show ? '10px' : '0')};
-  border: 1px solid #ffffff;
-  border-radius: 4px;
-  transition: max-width 0.3s ease, opacity 0.3s ease, padding 0.3s ease, margin-left 0.3s ease;
-  overflow: hidden;
-  background-color: #a3a3a3b1;
-  
-  ::placeholder {
-    color: #FFf; 
-    opacity: 0;   
-    }
+  &:hover {
+    transform: scale(1.05);
+    color: azure;
+    text-shadow: 0 4px 10px rgb(0, 0, 0);
+  }
 `;
+
+
+export const Hamburger = styled.div`
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  z-index: 20;
+
+  @media (max-width: 950px) {
+    display: block;
+  }
+`;
+
+export const MobileMenu = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.85);
+  position: fixed;
+  top: 0;
+  left: ${({ $open }) => ($open ? '0' : '-100%')};
+  width: 100%;
+  height: 100vh;
+  transition: all 0.3s ease-in-out;
+  padding-top: 120px;
+  z-index: 15;
+
+  ${MenuItem} {
+    color: #fff;
+    font-size: 1.8rem;
+    margin: 20px 0;
+  }
+`;
+
+export const MenuIconOpen = FiMenu;
+export const MenuIconClose = FiX;
