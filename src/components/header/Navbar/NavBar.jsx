@@ -85,7 +85,7 @@ export const HeaderEx = () => {
         <Link onClick={toggleMenu} to="support" smooth={true} duration={1000} offset={-80}>
           <MenuItem>Soporte</MenuItem>
         </Link>
-        <Link onClick={toggleMenu} to="aboutus" smooth={true} duration={1000} offset={-80}>
+        <Link onClick={toggleMenu} to="aboutUs" smooth={true} duration={1000} offset={-80}>
           <MenuItem>Nosotros</MenuItem>
         </Link>
         <Link onClick={toggleMenu} to="countries" smooth={true} duration={600} offset={-80}>
