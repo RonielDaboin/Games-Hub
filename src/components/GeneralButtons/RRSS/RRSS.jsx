@@ -4,7 +4,7 @@ export const RRSS = () => {
   return (
     <>
         <a
-        href="https://wa.me/12127365000?text=Hola,%20quiero%20más%20info!"
+        href="https://wa.me/+56922132240?text=Hola,%20GamesHub%20Necesito%20más%20info!"
         target="_blank"
         rel="noopener noreferrer"
         className="whatsapp-button"/>
